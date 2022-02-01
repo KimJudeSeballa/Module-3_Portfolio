@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Animal Adoption</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <!-- <h2 id="list">Added</h2> -->
+    <nav>
+        <figure>
+                <img src="./imgs/logo.png" alt="web-logo" style="padding-left:40%; padding-right:15% ;">
+                <h1 class="cursive">Top visited animal adoption site</h1>
+                <img src="./imgs/paw.png" style="float: right; height: 50px; padding-left:  20px;">
+            </div>
+        </figure>
+        
+    </nav>
+
+    <div class="container">
+        <div class="added-items">
+            <h1 id="like"></h1>
+            <div id="cat"></div>
+            <div id="dog"></div>
+            <div id="rabbit"></div>
+            <div id="bird"></div>
+            <div id="iguana"></div>
+            <div id="mice"></div>
+            <div id="dove"></div>
+            <div id="eagle"></div>
+            <div id="monkey"></div>
+            <div id="duck"></div>
+        </div>
+        <div style="display: flex;">
+            <div class="swiper mySwiper" style="margin-left: 60%; margin-top: 30%;"> 
+                <h4 class="wordCarousel" style="float: right;">
+                    <img src="imgs/paws.png" style="height: 100px;">
+                    <div class="carousel" > 
+                        <!-- Use classes 2,3, or 4 to match the number of words -->
+                        <ul class="flip4">
+                            <li class="words">Adopt</li>
+                            <li class="words">Match</li>
+                            <li class="words">Pick</li>
+                            <li class="words">Swipe</li>
+                        </ul>
+                    </div>
+                </h4>
+            </div>
+            <div class="swiper mySwiper">
+                <h2 class="anipic">Pet's Images</h2>
+                <div class="swiper-wrapper">
+
+                    <!-- cat -->
+                    <div class="swiper-slide">
+                        <div class="card-image cat"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Charlotte,</h2>
+                                <span>2</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insert()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- dog -->
+                    <div class="swiper-slide">
+                        <div class="card-image dog"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Joseph,</h2>
+                                <span>4</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertDog()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- rabbit -->
+                    <div class="swiper-slide">
+                        <div class="card-image rabbit"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Kennie and Bunnie,</h2>
+                                <span>1 and 3</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertRabbit()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bird -->
+                    <div class="swiper-slide">
+                        <div class="card-image bird"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Felix,</h2>
+                                <span>5months</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertBird()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- iguana -->
+                    <div class="swiper-slide">
+                        <div class="card-image iguana"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Gord,</h2>
+                                <span>5</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertIguana()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mice -->
+                    <div class="swiper-slide">
+                        <div class="card-image mice"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Timmy,</h2>
+                                <span>1</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertMice()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dove -->
+                    <div class="swiper-slide">
+                        <div class="card-image dove"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Dizzi,</h2>
+                                <span>2</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertDove()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- eagle -->
+                    <div class="swiper-slide">
+                        <div class="card-image eagle"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Jack,</h2>
+                                <span>4</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertEagle()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- monkey -->
+                    <div class="swiper-slide">
+                        <div class="card-image monkey"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Abu and Abe,</h2>
+                                <span>2 and 5</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertMonkey()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- duck -->
+                    <div class="swiper-slide">
+                        <div class="card-image duck"></div>
+                        <div class="grid">
+                            <div class="name">
+                                <h2>Dolly,</h2>
+                                <span>2</span>
+                            </div>
+                            <div class="card-content">
+                                <i class="fas fa-undo"></i>
+                                <i class="fas fa-times swiper-button-next"></i>
+                                <i class="fas fa-star"></i>
+                                <button onclick="insertDuck()"><i class=" fas fa-heart swiper-button-next"></i></button>
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: 'cards',
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

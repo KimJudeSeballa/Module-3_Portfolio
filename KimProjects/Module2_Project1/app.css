@@ -1,0 +1,64 @@
+/* People Section */
+#people{
+    height: 100%;
+    padding: 20px;
+    background-image: url("https://scontent.fceb6-1.fna.fbcdn.net/v/t1.15752-9/269718509_637615407386608_5997836110997141382_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHcuAsrGSor1e6zCxtT8_oDv3yO2tgOIN6_fI7a2A4g3gbN-5sNCXO9exkRDRfCqGM3w5bL27MgzHWXoT2LDaR2&_nc_ohc=GscIW34hIQcAX-9mO2v&_nc_ht=scontent.fceb6-1.fna&oh=03_AVKlOxw2bxC7VehzwiiEB1QyfGaj9rdm_2UuFv1vKAP2Rw&oe=61F9ADAA");
+    background-size: cover;
+}
+.headings1{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: rgb(245, 231, 214);
+}
+.creator{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0px;
+    color: rgb(245, 231, 214);
+}
+.section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 550px;
+    border: 1px solid rgb(70, 55, 37);
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(196, 149, 80) 50%, rgb(207,185,151) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: rgb(253, 253, 255);
+    border: none;
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+.box img{
+    width: 150px;
+    height: 150px;
+}
+p{
+    color: rgb(255, 255, 255);
+}
+/*Quotes*/
+.quote{
+    font-family: century;
+    color: rgb(245, 231, 214);
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3rem;
+}

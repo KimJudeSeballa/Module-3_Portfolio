@@ -1,0 +1,55 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="app.css">
+    </head>
+
+    <body style = "margin:0">
+        <div class="flex-container"> 
+            <div class="calorie-container">
+                <h1 class="heading">CALORIE CALCULATOR</h1>
+                <div>
+                    <small class="labels" >Age:</small><br />
+                    <input type="number" class="textbox" id="age" placeholder=" Ages 15-80"><br />
+                </div>
+
+                <div>
+                    <small class="labels">Gender:</small><br />
+                    <select class="textbox" id="gender">
+                        <option selected value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <small class="labels">Height:</small><br />
+                    <input type="number" class="textbox" id="height" placeholder=" In centimeters"><br />
+                </div>
+
+                <div>
+                    <small class="labels">Weight:</small><br />
+                    <input type="number" class="textbox" id="weight" placeholder=" In kilograms"><br />
+                </div>
+                
+                <div>
+                    <small class="labels">Activity:</small><br />
+                    <select id="act" class="textbox">
+                        <option selected value="1">Sedentary (little or no exercise)</option>
+                        <option value="2">Lightly active (light exercise/sports 1-3 days/week)</option>
+                        <option value="3">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                        <option value="4">Very active (hard exercise/sports 6-7 days a week)</option>
+                        <option value="5">Extra active (very hard exercise/sports & physical job or 2x training)</option>
+                    </select>
+                </div>
+
+                <div style="text-align: center;">
+                    <button class="calculate" style="margin-top: 20px;" onclick="calculate()">Calculate</button>
+                </div>
+                <br>
+                <div id="error" class="er"></div>
+            </div>
+        </div>
+
+        <script src="app.js">
+        </script>
+    </body>
+</html>

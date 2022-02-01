@@ -1,0 +1,495 @@
+/** @format */
+
+html,
+.cursive{
+	font-style:italic;
+	color: white;
+}
+.anipic{
+	color: black;
+	font-size: 30px;
+	
+
+}
+body {
+	position: relative;
+	height: 100%;
+	font-family: ProximaNova, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+		Cantarell, Noto Sans, sans-serif, Helvetica, Arial, Apple Color Emoji,
+		Segoe UI Emoji;
+	background-color: rgb(238, 238, 238);
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+button {
+	background-color: transparent;
+	border: none;
+}
+nav {
+	background-color: #462f48;
+	position: fixed;
+	z-index: 6;
+	width: 100%;
+}
+nav figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	display: grid;
+	grid-template-columns: 0.5fr 2fr;
+}
+.container .added-items {
+	border-right: 2px solid rgba(0, 0, 0, 0.062);
+	min-height: 100vh;
+	height: 100%;
+	background: linear-gradient(45deg, #fd267a, #ff6036);
+	padding: 20px;
+	/* z-index: 1; */
+	-webkit-box-shadow: 5px 2px 15px 5px rgba(0, 0, 0, 0.34);
+	box-shadow: 5px 2px 15px 5px rgba(0, 0, 0, 0.34);
+}
+.container .added-items h1 {
+	margin-top: 100px;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+}
+.swiper {
+	width: 100%;
+	max-width: 550px;
+	height: 700px;
+	position: fixed;
+	top: 100px;
+	left: 0;
+	right: 0;
+}
+.swiper h2 {
+	margin: 30px 0;
+}
+.swiper-slide {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 18px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+}
+.swiper-slide .grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 1fr 100px;
+	width: 100%;
+	height: 100%;
+	max-height: 80vh;
+}
+.swiper-slide .card-content {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 999;
+}
+.swiper-slide .card-content .fa-undo {
+	color: #fecd51;
+	border: 2px solid #fecd51;
+	border-radius: 100%;
+	padding: 20px;
+	font-size: 30px;
+}
+.swiper-slide .card-content .fa-undo:hover {
+	background-color: #fecd51;
+	color: #fff;
+}
+.swiper-slide .card-content .fa-times {
+	color: #f13b2d;
+	border: 2px solid #f13b2d;
+	border-radius: 100%;
+	padding: 20px;
+	font-size: 30px;
+}
+.swiper-slide .card-content .fa-times:hover {
+	background-color: #f13b2d;
+	color: #fff;
+}
+.swiper-slide .card-content .fa-star {
+	color: #3598d3;
+	border: 2px solid #3598d3;
+	border-radius: 100%;
+	padding: 20px;
+	font-size: 30px;
+}
+.swiper-slide .card-content .fa-star:hover {
+	background-color: #3598d3;
+	color: #fff;
+}
+.swiper-slide .card-content .fa-heart {
+	color: #2df187;
+	border: 2px solid #2df187;
+	border-radius: 100%;
+	padding: 20px;
+	font-size: 30px;
+	background: none;
+	cursor: pointer;
+}
+.swiper-slide .card-content .fa-heart:hover {
+	background-color: #2df187;
+	color: #fff;
+}
+.swiper-slide .card-content .fa-bolt {
+	color: #7d24e2;
+	border: 2px solid #7d24e2;
+	border-radius: 100%;
+	padding: 20px;
+	font-size: 30px;
+}
+.swiper-slide .card-content .fa-bolt:hover {
+	background-color: #7d24e2;
+	color: #fff;
+}
+.swiper-slide .name {
+	display: flex;
+	align-items: center;
+	z-index: 999;
+	font-weight: 200;
+	/* margin: 100px 20px; */
+}
+.swiper-slide .name {
+	margin-top: 100px;
+	margin-left: 20px;
+}
+.swiper-slide .name span {
+	margin-left: 14px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.swiper-slide .name-added {
+	display: flex;
+	align-items: center;
+	background-color: #000;
+	position: relative;
+	top: 120px;
+	height: 20px;
+	padding: 10px 0;
+	width: 100%;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.swiper-slide .name-added span {
+	font-weight: normal;
+}
+.swiper-slide .name-added h2 {
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+}
+.swiper-slide .card-image.cat {
+	position: absolute;
+	background-image: url("https://th.bing.com/th/id/R.182df42b22ce347bdb31a38c216e0326?rik=bbuS9lUmBbSS%2fQ&riu=http%3a%2f%2fwww.100hdwallpapers.com%2fwallpapers%2f2560x1600%2fcurious_cat-widescreen_wallpapers.jpg&ehk=RGShTqHZUsZTbi%2bWwe5GLQsvXjxYA9T5NuWGpUn6J3I%3d&risl=&pid=ImgRaw&r=0");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.cat-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	max-height: 100px;
+	/* margin-top: 10px; */
+}
+
+.swiper-slide .card-image.dog {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	/* background-repeat: no-repeat; */
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.dog-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	max-height: 100px;
+	margin-top: 30px;
+}
+
+.swiper-slide .card-image.rabbit {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/33152/european-rabbits-bunnies-grass-wildlife.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	/* background-repeat: no-repeat; */
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.rabbit-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/33152/european-rabbits-bunnies-grass-wildlife.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	height: 100px;
+	margin-top: 30px;
+}
+.swiper-slide .card-image.bird {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/679598/pexels-photo-679598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.bird-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/679598/pexels-photo-679598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	height: 100%;
+	height: 100px;
+	margin-top: 30px;
+}
+.swiper-slide .card-image.iguana {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/751687/pexels-photo-751687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.iguana-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/751687/pexels-photo-751687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	height: 100%;
+	max-height: 100px;
+	margin-top: 30px;
+}
+.swiper-slide .card-image.mice {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/51340/rat-pets-eat-51340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.mice-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/51340/rat-pets-eat-51340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	height: 100%;
+	max-height: 100px;
+	margin-top: 30px;
+}
+.swiper-slide .card-image.dove {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/734013/pexels-photo-734013.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.dove-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/734013/pexels-photo-734013.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	height: 100%;
+	max-height: 100px;
+	margin-top: 30px;
+}
+.swiper-slide .card-image.eagle {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/133356/pexels-photo-133356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.eagle-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/133356/pexels-photo-133356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	height: 100%;
+	max-height: 100px;
+	margin-top: 30px;
+}
+.swiper-slide .card-image.monkey {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/5479904/pexels-photo-5479904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.monkey-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/5479904/pexels-photo-5479904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	height: 100%;
+	max-height: 100px;
+	margin-top: 30px;
+}
+.swiper-slide .card-image.duck {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/7369956/pexels-photo-7369956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+}
+.swiper-slide .card-image.duck-added {
+	position: absolute;
+	background-image: url("https://images.pexels.com/photos/7369956/pexels-photo-7369956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	border-radius: 5px;
+	height: 100%;
+	max-height: 100px;
+	margin-top: 30px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+	left: 0;
+	right: 0;
+	position: relative;
+	bottom: 0;
+	top: 0 !important;
+	height: auto !important;
+	margin-top: 0 !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	display: none;
+}
+.added-items {
+	display: block;
+	/* display: grid;
+	grid-template-columns: repeat(2, 1fr); */
+	gap: 50px;
+}
+#cat {
+	position: relative;
+}
+#dog {
+	position: relative;
+}
+
+.wordCarousel {
+	display: flex;
+    font-size: 36px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+}
+.carousel {
+	overflow: hidden;
+	position: relative;
+	float: right;
+	height: 100px;
+	padding-top: 10px;
+	margin-top: -10px;
+}
+.words {
+	font-family: Serif;
+	font-size: 60px;
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+	padding: 0 10px;
+	height: 45px;
+	margin-bottom: 45px;
+	display: block;
+}
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -90px;  }
+    50% { margin-top: -90px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+/* @media (max-width: 992px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr  1fr;
+	}
+} */

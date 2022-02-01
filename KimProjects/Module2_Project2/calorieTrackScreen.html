@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="app.css">
+    </head>
+
+    <body style="margin:0">
+        <div class="flex-container2">
+            <div class="calorie-screen">
+                <h1 class="result">RESULTS</h1>
+                <div class="calorieBox">
+                </br>
+                    <h3 class="heading"> CALORIES NEEDED PER DAY:</h3>
+                    <div id="box" class="total">3000</div>
+                </br>
+                </div>
+
+                <div>
+                    <small class="labels">Name of Food:</small><br />
+                    <input type="text" class="textbox2" id="food"><br />
+                </div>
+
+                <div>
+                    <small class="labels">Amount of Calories:</small><br />
+                    <input type="number" class="textbox2" id="cal"><br />
+                </div>
+
+                <div style="text-align: center;">
+                    <button class="consumeBtn" style="margin-top: 20px;" onclick="consume()">Consume</button>
+                </div>                     
+            </div>
+        </div>
+        <script src="calorie.js">
+        </script>
+    </body>
+
+</html>
