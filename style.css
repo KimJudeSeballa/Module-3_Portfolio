@@ -47,25 +47,6 @@ section{
     padding:1rem;
 }
 
-.btn{
-    padding:.7rem 3rem;
-    background:#333;
-    color:#fff;
-    cursor: pointer;
-    margin-top: 1rem;
-    font-size: 2rem;
-    border-radius: 5rem;
-}
-
-.btn i{
-    padding:0 .5rem;
-    font-size: 1.8rem;
-}
-
-.btn:hover{
-    background:var(--yellow);
-}
-
 .heading{
     text-align: center;
     margin:0 6rem;
@@ -102,25 +83,14 @@ header .user img{
     border:.7rem solid var(--yellow);
 }
 
-header .user .name{
-    font-size: 3.5rem;
-    color:#fff;
-}
-
-header .user .post{
-    font-size: 2rem;
-    color:#eee;
-}
-
 header .navbar{
-    width:100%;
+    width:105%;
 }
 
 header .navbar ul{
     list-style: none;
     padding:1rem 3rem;
 }
-
 
 header .navbar ul li a{
     display: block;
@@ -173,4 +143,55 @@ header .navbar ul li a:hover{
     font-size:2rem;
     color:#eee;
     padding: 1rem 0;
+}
+
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.portfolio .box-container a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+.portfolio .box-container a:hover{
+    background:var(--yellow);
 }

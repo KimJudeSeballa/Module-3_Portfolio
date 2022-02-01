@@ -1,0 +1,14 @@
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+h2{
+    background-color: black;
+}
+html{
+    text-align: center;
+    color: white;
+    background-image:url("https://wallpapercave.com/wp/wp6246786.jpg");
+    margin-left: 150px;
+    margin-right: 150px;
+}
