@@ -1,0 +1,171 @@
+{
+	"status_code": 200,
+	"message": "5 random anime found",
+	"data": [
+		{
+			"anilist_id": 119836,
+			"mal_id": 27495,
+			"format": 2,
+			"status": 0,
+			"titles": {
+				"en": "Sore Ike! Anpanman: Kaiketsu Naganegiman to Yakisobapanman",
+				"jp": "それいけ! アンパンマン 怪傑ナガネギマンとやきそばパンマン "
+			},
+			"descriptions": {
+				"en": ""
+			},
+			"start_date": "2001-07-14T00:00:00Z",
+			"end_date": "2001-07-14T00:00:00Z",
+			"season_period": 2,
+			"season_year": 2001,
+			"episodes_count": 1,
+			"episode_duration": 20,
+			"cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx119836-KyUh8jSVwAN8.jpg",
+			"cover_color": "#f1d61a",
+			"genres": ["Adventure", "Fantasy"],
+			"score": 0,
+			"id": 7679
+		},
+		{
+			"anilist_id": 2614,
+			"mal_id": 2614,
+			"format": 2,
+			"status": 0,
+			"titles": {
+				"en": "Mirai Shounen Conan: Tokubetsu-hen - Kyodaiki Gigant no Fukkatsu",
+				"jp": "未来少年コナン特別篇　巨大機ギガントの復活"
+			},
+			"descriptions": {
+				"en": "Mirai Shounen Conan movie."
+			},
+			"start_date": "1984-03-11T00:00:00Z",
+			"end_date": "1984-03-11T00:00:00Z",
+			"season_period": 1,
+			"season_year": 1984,
+			"episodes_count": 1,
+			"episode_duration": 47,
+			"cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/2614.jpg",
+			"cover_color": "#e4781a",
+			"genres": ["Adventure", "Drama", "Sci-Fi"],
+			"score": 55,
+			"id": 5231
+		},
+		{
+			"anilist_id": 12021,
+			"mal_id": 12021,
+			"format": 1,
+			"status": 0,
+			"titles": {
+				"en": "Poyopoyo Kansatsu Nikki",
+				"jp": "ポヨポヨ観察日記"
+			},
+			"descriptions": {
+				"en": ""
+			},
+			"start_date": "2012-01-08T00:00:00Z",
+			"end_date": "2012-12-30T00:00:00Z",
+			"season_period": 0,
+			"season_year": 2012,
+			"episodes_count": 52,
+			"episode_duration": 3,
+			"cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/12021.jpg",
+			"cover_color": "#f1d65d",
+			"genres": [
+				"Comedy",
+				"Slice of Life",
+				"Rural",
+				"Family Life",
+				"Episodic",
+				"Animals",
+				"Surreal Comedy",
+				"Seinen"
+			],
+			"score": 70,
+			"id": 4173
+		},
+		{
+			"anilist_id": 100815,
+			"mal_id": 36999,
+			"format": 4,
+			"status": 0,
+			"titles": {
+				"en": "Zoku Owarimonogatari",
+				"jp": "続・終物語",
+				"it": "Zoku Owarimonogatari"
+			},
+			"descriptions": {
+				"en": "",
+				"it": "La storia si svolge all'indomani della consegna dei diplomi. Koyomi Araragi si sveglia e si rende conto che c'è qualcosa che non va, come se fosse in un abisso psicologico dove tutto ciò che aveva conosciuto fino a quel momento è cambiato. Koyomi decide di far visita alle sue amiche per cercare aiuto, ma incontrandole si rende conto di essere in un mondo parallelo, dove alcuni eventi non sono mai avvenuti..."
+			},
+			"start_date": "2019-02-27T00:00:00Z",
+			"end_date": "2019-03-27T00:00:00Z",
+			"season_period": 0,
+			"season_year": 2019,
+			"episodes_count": 6,
+			"episode_duration": 26,
+			"trailer_url": "https://www.youtube.com/embed/MhzHuYCRyCU",
+			"cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100815-cZbnM9Bjth8W.png",
+			"cover_color": "#a16b28",
+			"banner_image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/100815-bglW3E780lwq.jpg",
+			"genres": [
+				"Drama",
+				"Mystery",
+				"Supernatural",
+				"Urban Fantasy",
+				"Dissociative Identities",
+				"Male Protagonist",
+				"Vampire",
+				"Primarily Female Cast",
+				"Demons",
+				"Philosophy",
+				"Isekai",
+				"Time Manipulation",
+				"Meta",
+				"Gods",
+				"Female Harem",
+				"Crossdressing",
+				"Monster Girl",
+				"Nekomimi",
+				"Kemonomimi",
+				"School",
+				"Primarily Teen Cast"
+			],
+			"sequel": 2485,
+			"prequel": 2880,
+			"score": 84,
+			"id": 12514
+		},
+		{
+			"anilist_id": 932,
+			"mal_id": 932,
+			"format": 4,
+			"status": 0,
+			"titles": {
+				"en": "Ichigeki Sacchuu!! Hoihoi-san",
+				"jp": "一撃殺虫!!ホイホイさん"
+			},
+			"descriptions": {
+				"en": "The time is the near future. Cockroaches and other household pests have become immune to all forms of insecticides. In response to this crisis, a Japanese company has created small, doll-like, insect exterminating robots called Hoi Hoi-san. A competing company has also released their own version, Combat-san. Because of their adorable appearance, these little robots have become somewhat of a phenomenon and have gained many fans. Late at night, in the home of one such fan, Hoi Hoi-san and Combat-san search for insects to exterminate... but Combat-san is not above trying to exterminate Hoi Hoi-san while she's at it. "
+			},
+			"start_date": "2004-09-30T00:00:00Z",
+			"end_date": "2004-09-30T00:00:00Z",
+			"season_period": 3,
+			"season_year": 2004,
+			"episodes_count": 1,
+			"episode_duration": 11,
+			"cover_image": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/932.jpg",
+			"cover_color": "#e4ae93",
+			"genres": [
+				"Comedy",
+				"Sci-Fi",
+				"Slice of Life",
+				"Female Protagonist",
+				"Primarily Female Cast",
+				"Robots"
+			],
+			"score": 55,
+			"id": 9680
+		}
+	],
+	"version": "1"
+}

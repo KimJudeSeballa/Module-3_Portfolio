@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME WORLD</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="./images/AnimeWorldLogo.png" alt="web-logo"></a>
+        </div>
+        <ul class="main-nav">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./about.html">about</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="home-section">
+            <ul class="sidebar">
+                <div class="sidebar-links">
+                    <h3>genres</h3>
+                    <li><a href="#">action</a></li>
+                    <li><a href="#">adventure</a></li>
+                    <li><a href="#">comedy</a></li>
+                    <li><a href="#">drama</a></li>
+                    <li><a href="#">fantasy</a></li>
+                    <li><a href="#">fiction</a></li>
+                    <li><a href="#">horror</a></li>
+                    <li><a href="#">mystery</a></li>
+                    <li><a href="#">romance</a></li>
+                    <li><a href="#">sci-fi</a></li>
+                    <li><a href="#">thriller</a></li>
+                </div>
+
+                <div class="sidebar-image">
+                    <img src="./images/Tr7peB-anime-girl-icon-clipart.png" alt="">
+                </div>
+            </ul>
+            <div class="swiper mySwiper">
+                <h1>top anime recomendations</h1>
+                <div class="swiper-wrapper">
+                    <div data-hash="slide1" class="swiper-slide" id="grid">
+                        <div class="image-and-info">
+                            <div id="cover_image">
+                            </div>
+                            <div class="info">
+                                <h3 id="title-en"></h3>
+                                <h3 id="title-jp"></h3>
+                                <h2 id="genre"></h2>
+                                <h3 id="start_year"></h3>
+                                <h3 id="end_year"></h3>
+                                <br><br>
+                                <p id="description"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-hash="slide2" class="swiper-slide">
+                        <div class="image-and-info">
+                            <div id="cover_image_v2"></div>
+                            <div class="info">
+                                <h3 id="title-en-v2"></h3>
+                                <h3 id="title-jp-v2"></h3>
+                                <h2 id="genrev2"></h2>
+                                <h3 id="start_year_v2"></h3>
+                                <h3 id="end_year_v2"></h3>
+                                <br><br>
+                                <p id="descriptionv2"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-hash="slide3" class="swiper-slide">
+                        <div class="image-and-info">
+                            <div id="cover_image_v3"></div>
+                            <div class="info">
+                                <h3 id="title-en-v3"></h3>
+                                <h3 id="title-jp-v3"></h3>
+                                <h2 id="genrev3"></h2>
+                                <h3 id="start_year_v3"></h3>
+                                <h3 id="end_year_v3"></h3>
+                                <br><br>
+                                <p id="descriptionv3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-hash="slide4" class="swiper-slide">
+                        <div data-hash="slide4" class="swiper-slide">
+                            <div class="image-and-info">
+                                <div id="cover_image_v4"></div>
+                                <div class="info">
+                                    <h3 id="title-en-v4"></h3>
+                                    <h3 id="title-jp-v4"></h3>
+                                    <h2 id="genrev4"></h2>
+                                    <h3 id="start_year_v4"></h3>
+                                    <h3 id="end_year_v4"></h3>
+                                    <br><br>
+                                    <p id="descriptionv4"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-hash="slide5" class="swiper-slide">
+                        <div data-hash="slide5" class="swiper-slide">
+                            <div class="image-and-info">
+                                <div id="cover_image_v5"></div>
+                                <div class="info">
+                                    <h3 id="title-en-v5"></h3>
+                                    <h3 id="title-jp-v5"></h3>
+                                    <h2 id="genrev5"></h2>
+                                    <h3 id="start_year_v5"></h3>
+                                    <h3 id="end_year_v5"></h3>
+                                    <br><br>
+                                    <p id="descriptionv5"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+
+                <button class="swiper-button-next">Next</button>
+
+            </div>
+
+
+            <div class="home-side-image">
+                <div class="slider-images"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./fetching.js"></script>
+    <script src="./fetchingv2.js"></script>
+    <script src="./fetchingv3.js"></script>
+    <script src="./fetchingv4.js"></script>
+    <script src="./fetchingv5.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 500,
+            allowTouchMove: false,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                // prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

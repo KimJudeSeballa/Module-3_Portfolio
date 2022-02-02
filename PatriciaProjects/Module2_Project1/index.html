@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body style = "margin:0">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#author">Quotes From Influential People</a></li>
+        </ul>
+    </nav>
+    <section id="author">
+        <div class="section">
+            <div class="box">
+                <img src="Images/albert.jpg" alt="">
+                <h1 class="headings" style="display:block;" onclick="document.getElementById('button1').style.display = 'block';">Albert Einstein</h1>
+                <p>Born March 14, 1879, Ulm, Württemberg, Germany<br> Died April 18, 1955, Princeton, New Jersey, U.S.<br><br> 
+                    German-born physicist who developed the special and general theories of relativity and won the Nobel Prize for Physics in 1921 
+                    for his explanation of the photoelectric effect. Einstein is generally considered the most influential physicist of the 20th century.</p>
+                    <br><br>
+                <button id="button1" style="display:none;" onclick="getQuote(1);">Get Quote</button>
+            </div>
+            <button id="button1" style="display:none;" onclick="getQuote();">Get Quote</button>
+            <div class="box">
+                <img src="Images/bob.jpg" alt="">
+                <h1 class="headings" style="display:block;" onclick="document.getElementById('button2').style.display = 'block';">Bob Marley</h1>
+                <p>Born February 6, 1945, Nine Miles, St. Ann, Jamaica <br>Died May 11, 1981, Miami, Florida, U.S. <br> <br>
+                    His full name is Robert Nesta Marley, a Jamaican singer-songwriter whose thoughtful ongoing distillation 
+                    of early ska, rock steady, and reggae musical forms blossomed in the 1970s into an electrifying 
+                    rock-influenced hybrid that made him an international superstar.</p>
+                 <br><br>
+                <button id="button2" style="display:none;" onclick="getQuote(2);">Get Quote</button>
+            </div>
+            <div class="box">
+                <img src="Images/maya.jpg" alt="">
+                <h1 class="headings" style="display:block;" onclick="document.getElementById('button3').style.display = 'block';">Maya Angelou</h1>
+                <p>Born on April 4, 1928, in St. Louis, Missouri.<br> Died May 28, 2014 <br> <br>
+                    An American author, actress, screenwriter, dancer, poet and civil rights activist best known for her 1969 memoir, 
+                    I Know Why the Caged Bird Sings, which made literary history as the first nonfiction bestseller by an African American
+                    woman. Angelou received several honors throughout her career, including two NAACP Image Awards in the outstanding literary 
+                    work (nonfiction) category, in 2005 and 2009.</p>
+                <button id="button3" style="display:none;" onclick="getQuote(3);" margin-top="50px;">Get Quote</button>
+            </div>
+            <div class="box">
+                <img src="Images/meredith.jpg" alt="">
+                <h1 class="headings" style="display:block;" onclick="document.getElementById('button4').style.display = 'block';">Meredith Grey</h1>
+                <p>Born in 1978. <br><br> The head of general surgery and former Director of the Residency Program at Grey Sloan Memorial Hospital. 
+                    She is the daughter of the now-deceased Ellis Grey, a famed general surgeon, and the now-deceased Thatcher Grey. 
+                    She was married to Derek Shepherd until his death; they have two daughters, Zola and Ellis, and a son, Bailey. 
+                    She has won a Catherine Fox Award.</p>
+                <br><br>
+                <button id="button4" style="display:none;" onclick="getQuote(4);">Get Quote</button>
+            </div>
+            <div class="box">
+                <img src="Images/taylor.jpg" alt="">
+                <h1 class="headings" style="display:block;" onclick="document.getElementById('button5').style.display = 'block';">Taylor Swift</h1>
+                <p>Born December 13, 1989, West Reading, Pennsylvania, U.S. <br><br>
+                    Her full name is Taylor Alison Swift. An American pop and country music singer-songwriter whose tales
+                     of young heartache achieved widespread success in the early 21st century.The Musician was earning renown 
+                     as a country music singer by the age of 16. </p>
+                     <br><br><br>
+            <button id="button5" style="display:none;" onclick="getQuote(5);">Get Quote</button>
+            </div>
+        </div>
+        <div id="quoteBox" class="quote">Click their names to generate quotes.</div>
+    </section>
+</body>
+</html>

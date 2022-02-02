@@ -1,0 +1,117 @@
+/* Navigation Bar Section */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 93, 110);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    padding: 8px 25px;
+    transition: all .8s ease;
+}
+.navbar ul li a:hover{
+    background-color: beige;
+    color: rgb(75, 87, 99);
+    box-shadow: 0 0 12px bisque;
+}
+
+/* Author Section */
+#author{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(198, 206, 212);
+    background-image: url("Images/img.gif");
+    background-blend-mode: lighten;
+    background-position:center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    padding: 20px;
+}
+.section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 90px;
+}
+.headings{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:rgb(33, 35, 61);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    border: 1px solid rgb(70, 55, 37);
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(245, 231, 214) 50%, rgb(194, 194, 194) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: rgb(73, 71, 105);
+    border: none;
+    box-shadow: 0 0 30px rgb(28, 36, 82);
+}
+.box img{
+    width: 200px;
+    height: 200px;
+}
+p{
+    font-family:'montserrat';
+    font-size: 17px;
+    color: rgb(31, 27, 27);
+}
+#button1, #button2, #button3, #button4, #button5 {
+    background-color: rgb(73, 71, 105);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*Quotes*/
+.quote{
+    font-family: 'montserrat';
+    color: rgb(15, 36, 66);
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(76, 93, 110);
+    background-color: rgb(245, 231, 214);
+    align-items: center;
+    position:relative;
+}
